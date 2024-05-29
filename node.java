@@ -1,12 +1,15 @@
 public class node {
+    int id;
+    String judulFilm;
+    double rating;
 
-    int data;
     node prev, next;
 
-    node(node prev, int data, node next) {
+    node(node prev, int id, String judulFilm, double rating, node next) {
         this.prev = prev;
-        this.data = data;
+        this.id = id;
+        this.judulFilm = judulFilm;
+        this.rating = rating;
         this.next = next;
     }
-
 }
